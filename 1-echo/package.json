@@ -13,7 +13,7 @@
   },
   "main": "server.js",
   "scripts": {
-    "test": "node server.js && mocha",
+    "test": "mocha",
     "start": "node server.js"
   },
   "dependencies": {

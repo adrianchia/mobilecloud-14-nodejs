@@ -39,5 +39,23 @@ describe('Video test add and list', function() {
 			.expect(400)
 			.expect("Missing ['name','duration','url'].", done);
 	});
+
+	it("should return Missing ['name','duration','url'].", function(done) {
+		request(BASE_URL)
+			.post('/video')
+			.set('Content-Type','application/x-www-form-urlencoded')
+			.send({"name": '', "url": 'www.a.com', "duration": ""})
+			.expect(400)
+			.expect("Missing ['name','duration','url'].", done);
+	});
+
+	it("should return Missing ['name','duration','url'].", function(done) {
+		request(BASE_URL)
+			.post('/video')
+			.set('Content-Type','application/x-www-form-urlencoded')
+			.send({"name": '', "url": 'www.a.com', "duration": "aaa"})
+			.expect(400)
+			.expect("Missing ['name','duration','url'].", done);
+	});
 });
 

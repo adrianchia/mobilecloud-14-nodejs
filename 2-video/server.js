@@ -21,11 +21,12 @@ app.get('/video', function(req,res) {
 });
 
 app.post('/video', function(req, res) {
+	console.log(req.body);
 	var name = req.body.name;
 	var url = req.body.url;
 	var duration = req.body.duration;
 
-	if(!name || !url || !duration || name.length < 1 || url.length < 10 || parseInt(duration) < 0) {
+	if(!name || !url || !duration || name.length < 1 || url.length < 10 || isNaN(duration) || parseInt(duration) < 0) {
 		res
 			.status(400)
 			.send("Missing ['name','duration','url'].");
