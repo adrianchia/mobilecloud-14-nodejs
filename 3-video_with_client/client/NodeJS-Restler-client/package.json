@@ -1,0 +1,26 @@
+{
+  "name": "mobilecloud-14-nodejs-restler-client",
+  "version": "0.0.1",
+  "description": "NodeJS based examples for Programming Cloud Services for Android Handheld Systems - NodeJS Restler Client",
+  "author": "Adrian Chia <achia@adrianchia.com>",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adrianchia/mobilecloud-14-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adrianchia/mobilecloud-14-nodejs/issues"
+  },
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "restler": "^3.2.2"
+  },
+  "devDependencies": {},
+  "private": true,
+  "preferGlobal": true,
+  "license": "MIT"
+}
