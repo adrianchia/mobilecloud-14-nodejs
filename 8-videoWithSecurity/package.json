@@ -1,0 +1,40 @@
+{
+  "name": "mobilecloud-14-nodejs-video",
+  "version": "0.0.1",
+  "description": "NodeJS based examples for Programming Cloud Services for Android Handheld Systems - Video",
+  "author": "Adrian Chia <achia@adrianchia.com>",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adrianchia/mobilecloud-14-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adrianchia/mobilecloud-14-nodejs/issues"
+  },
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.5.0",
+    "connect-ensure-login": "^0.1.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.3.2",
+    "express": "^4.6.1",
+    "express-session": "^1.7.6",
+    "gaikan": "^2.0.2",
+    "mongoose": "^3.8.14",
+    "morgan": "^1.2.0",
+    "passport": "^0.2.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^1.20.1",
+    "node-uuid": "^1.4.1",
+    "supertest": "^0.13.0"
+  },
+  "private": true,
+  "preferGlobal": true,
+  "license": "MIT"
+}

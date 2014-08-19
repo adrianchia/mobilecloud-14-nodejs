@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mobile Cloud - Login</title>
+</head>
+<body>
+	<div data-if="root.message.length > 0">
+		#{root.message}
+	</div>
+	<div class="login">
+		<h1>Login to Mobile Cloud</h1>
+		<form method="post" action="/login">
+				<input id="username" name="username" type="text" placeholder="Username">
+				<input id="password" name="password" type="password" placeholder="Password">
+				<p>
+					<input type="submit" value="Login">
+				</p>
+		</form>
+	</div>
+</body>
+</html>

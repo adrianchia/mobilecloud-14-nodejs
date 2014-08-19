@@ -25,10 +25,6 @@ app.use(bodyParser.json());
 // Logging
 app.use(morgan('combined'));
 
-function handleVideoResult(err, videos) {
-
-}
-
 app.get('/video', function getVideoList(req,res) {
 	if(req.query.title) {
 		Video.findOne({name: req.query.title}, function(err,videos){
