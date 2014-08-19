@@ -2,7 +2,8 @@ Video Service with HTTPS
 =========================================
 This example demostrate how to enable HTTPS for NodeJS. This example will use the existing code from example #5.
 
-**Note** 
+**Note**
+
 1. When you run the example, you may see a security warning about the site certificate. This is expected for self signed certificate.
 2. Under no circumstances should you use the self-signed (test) certificate in a production environment. This is only for demostration purpose.
 
@@ -26,3 +27,4 @@ If you already have a running MongoDB instance, you may reuse existing instance.
 
 5. Generate Self-Sign Certificate using OpenSSL. see http://www.akadia.com/services/ssh_test_certificate.html for more information.
 6. Configure server.js for HTTPS using the generated key and cert above.
+7. Run the application on https://localhost/video (default HTTPS port or port 443)
