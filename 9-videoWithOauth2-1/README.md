@@ -1,5 +1,5 @@
-Video Service with OAuth 2
-=========================================
+Video Service with OAuth 2 (using oauth2-server)
+==============================================
 This example demostrate how to use OAuth 2 for NodeJS. This example will use the existing code from example #8.
 
 **Note**
