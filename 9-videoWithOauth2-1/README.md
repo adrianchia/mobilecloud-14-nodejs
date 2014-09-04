@@ -1,6 +1,6 @@
 Video Service with OAuth 2 (using oauth2-server)
 ==============================================
-This example demostrate how to use OAuth 2 for NodeJS. This example will use the existing code from example #8.
+This example demostrate how to use OAuth 2 for NodeJS.
 
 **Note**
 
@@ -27,4 +27,5 @@ If you already have a running MongoDB instance, you may reuse existing instance.
 
 5. Generate Self-Sign Certificate using OpenSSL. see http://www.akadia.com/services/ssh_test_certificate.html for more information.
 6. Configure server.js for HTTPS using the generated key and cert above.
-7. Run the application on https://localhost/video (default HTTPS port or port 443)
+7. Generate Seed data from seed.js via `node seed`
+8. Run the application on https://localhost:8443/video (default HTTPS port or port 443)
